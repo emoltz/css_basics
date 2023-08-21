@@ -2,8 +2,47 @@ section {
     display: grid;
     border: solid;
     padding:3px;
-    grid-template-columns:50px 50px 50px;
-    grid-template-rows:50px 50px 50px;
+    /* grid-template-columns:50px 50px 50px; */
+    /* grid-template-rows:50px 50px 50px; */
+
+    /**
+        or like the below:
+    */
+    
+    /* grid-template:50px 50px 50px/50px 50px 50px;  */
+
+    /**
+        or even like this:
+    */
+
+    /* grid-template: repeat(3, 50px)/repeat(3,50px); */
+
+    /**
+        `fr` unit.
+        this unit is used to divide the available space into fractions.
+        This makes it *responsive*!
+        for example:
+    */
+
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-rows:50px; */
+
+    /**
+        using `auto`:
+        this will make the column/row as wide as the content inside it.
+    */
+
+    grid-template-columns: 50px 50px auto;
+
+
+
+
+
+
+
+
+
+
 }
 
 div {
