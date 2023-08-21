@@ -1,0 +1,39 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-gap: 10px;
+}
+
+.tile{
+    /* border: solid 2px black; */
+    align-items:center;
+    padding: 5px;
+}
+
+.red{
+    background-color: red;
+    color: white;
+}
+
+.blue{
+    background-color: blue;
+    color: white;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.purple{
+    background-color: purple;
+    color: white;
+}
+
+.tile:hover{
+    opacity: 0.5;
+}
