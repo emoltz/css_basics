@@ -15,7 +15,7 @@ section {
         or even like this:
     */
 
-    /* grid-template: repeat(3, 50px)/repeat(3,50px); */
+    grid-template: repeat(3, 50px)/repeat(3,50px);
 
     /**
         `fr` unit.
@@ -32,15 +32,16 @@ section {
         this will make the column/row as wide as the content inside it.
     */
 
-    grid-template-columns: 50px 50px auto;
+    /* grid-template-columns: 50px 50px auto; */
+    
 
+    /**
+        using `Grid-column-gap & Grid-row-gap
+        this will make a gap between the columns/rows.
+    */
 
-
-
-
-
-
-
+    grid-column-gap: 4px;
+    grid-row-gap:10px;
 
 
 }
